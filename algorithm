@@ -1,0 +1,16 @@
+#include <iostream>
+#define ll long long
+using namespace std;
+int main()
+{
+    ll n, s = 0, sp;
+    cin >> n;
+    while (n)
+    {
+        int k = n % 10;
+        s = s < k ? k : s;    
+        n /= 10;
+    }
+    cout << s << endl;
+    
+}
